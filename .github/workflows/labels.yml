@@ -12,7 +12,7 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
       - name: labels
-        uses: ./.github/actions/hyperjump-labels
+        uses: ./.github/actions/labels
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           number: ${{ github.event.client_payload.number }}
